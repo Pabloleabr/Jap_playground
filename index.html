@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="app.js" defer type="module"></script>
+    <style>
+        body{
+            background:linear-gradient(purple, violet);
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25vw;
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+        }
+        #text{
+            color: white;
+            font-size: xx-large;
+            font-weight: 700;
+        }
+        #options, form{
+            color: white;
+            display: flex;
+            flex-direction: column;
+        }
+        .side{
+            display: flex;
+        }
+
+        @media screen and (max-width: 500px) {
+            body{
+                gap: 10vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <main>
+
+        <div id="text"></div>
+        <input type="text" name="input" id="input">
+    </main>
+    <div class="side">
+        
+            <form action="">
+                <div>
+                    <label for="karakana">Karakana</label>
+                    <input type="radio" name="jap_option" id="karakana" value="karakana">
+                </div>
+                <div>
+                    <label for="hiragana">Hiragana</label>
+                    <input type="radio" name="jap_option" id="hiragana" value="hiragana" checked>
+                </div>
+                    
+            </form>
+        
+    </div>
+
+</body>
+
+</html>
