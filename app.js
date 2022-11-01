@@ -17,6 +17,7 @@ for (const option of options) {
             current = japAlpha[option.id]
         }
         translate();
+        changeCheatsheet(japAlpha[option.id]);
     });
 }
 
