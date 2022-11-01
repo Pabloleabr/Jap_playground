@@ -8,41 +8,65 @@
     <script src="app.js" defer type="module"></script>
     <style>
         body{
-            background:linear-gradient(purple, violet);
+            background:linear-gradient(purple, rgb(132, 61, 199));
             height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 25vw;
+            justify-content: left;
+            color: white;
         }
         main{
             display: flex;
             flex-direction: column;
+            margin: 0 10vw;
+            width: 28vw;
         }
         #text{
-            color: white;
-            font-size: xx-large;
+            
+            font-size: 50px;
             font-weight: 700;
         }
-        #options, form{
-            color: white;
+        #options{
             display: flex;
             flex-direction: column;
+            
         }
         .side{
             display: flex;
+            flex-direction: row-reverse;
+            
+        }
+        #left{
+            height: 99vh;
+            width: 28vw;
+        }
+        #cheatsheet_text{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        #input{
+            width: 25vw;
+            height: 25px;
+            font-size: x-large;
+            font-weight: 500;
         }
 
         @media screen and (max-width: 500px) {
-            body{
-                gap: 10vw;
+            main{
+                margin: 5vw;
             }
         }
     </style>
 </head>
 <body>
-    <div>
+    <div id="left">
+        <details open>
+            <summary style="font-size: large;">Cheatsheet</summary>
+            <div id="cheatsheet_text">
 
+            </div>
+        </details>
     </div>
     <main>
 
