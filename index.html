@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Japanese Playground</title>
     <script src="app.js" defer type="module"></script>
     <style>
         body{
@@ -73,8 +73,10 @@
         <div id="text"></div>
         <input type="text" name="input" id="input">
     </main>
-    <div class="side">
-        
+    <div id="right">
+        <h2>Phonetical to:</h2>
+
+        <div class="side">
             <form action="">
                 <div>
                     <label for="karakana">Karakana</label>
@@ -84,8 +86,13 @@
                     <label for="hiragana">Hiragana</label>
                     <input type="radio" name="jap_option" id="hiragana" value="hiragana" checked>
                 </div>
-                    
+                <div>
+                    <label for="both">Both</label>
+                    <input type="radio" name="jap_option" id="both" value="both">
+                </div>
+                
             </form>
+        </div>
         
     </div>
 
