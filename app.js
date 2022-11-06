@@ -40,9 +40,11 @@ function translate(){
     text.innerText = ""
     for(let i = 0; upper.length > i; i+=2){
         let sub2 = upper.substring(i,i+2)
-        //check if its a vowel fisrt in any of the cases
-        if(upper[i].toUpperCase() == "A" || upper[i].toUpperCase() == "I" || upper[i].toUpperCase() == "U" 
-        || upper[i].toUpperCase() == "E" || upper[i].toUpperCase() == "O" || upper[i].toUpperCase() == "N" || upper[i].toUpperCase() == " "){
+        //check if its a vowel fisrt in any of the cases or if it uses n
+        let exeptions = ["A", "E", "I", "O", "U", "N", " "];
+        let vowels = ["A", "E", "I", "O", "U"];
+        let next = upper[i+1] == undefined ? "" : upper[i+1];
+        if(exeptions.includes(upper[i].toUpperCase()) && !(upper[i].toUpperCase() == "N" && vowels.includes(next.toUpperCase())) ){
             if (upper[i] == " ") {
                 text.innerHTML += "&nbsp"
             }else{
